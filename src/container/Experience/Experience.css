@@ -1,0 +1,147 @@
+.experience-inner {
+  display: flex;
+}
+
+.experience-container {
+  padding-left: 65px;
+  max-width: 700px;
+  padding-bottom: 0;
+}
+
+span {
+  font-size: 1.2rem;
+  color: #63f2d0;
+}
+
+.panel-content h3 {
+  color: #63f2d0;
+}
+
+.panel-content p {
+  color: #a59f95;
+}
+
+Tab p {
+  font-size: 13px;
+}
+
+.react-tabs {
+  display: flex;
+  width: 470px;
+  height: 300px;
+  border: 1px solid #141f2f;
+  color: white;
+  background: #141f2f;
+}
+
+.react-tabs__tab-list {
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: #141f2f;
+}
+
+.react-tabs__tab {
+  height: 50px;
+  list-style: none;
+  padding: 12px 6px;
+  cursor: pointer;
+  color: #a59f95;
+  font-size: 13px;
+}
+
+.react-tabs__tab:hover {
+  background-color: #19253b;
+}
+
+.react-tabs__tab--selected {
+  background: #19253b;
+  border: none;
+  border-left: 2px solid #63f2d0;
+  color: #63f2d0;
+}
+
+.react-tabs__tab-panel {
+  display: none;
+  width: 300px;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+}
+
+.react-tabs__tab {
+  padding-left: 24px;
+}
+
+.react-tabs__tab--selected {
+  padding-left: 15px;
+}
+
+.panel-content h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 15px;
+}
+
+.panel-content li {
+  list-style: none;
+  font-size: 12px;
+  margin-bottom: 1rem;
+  padding-left: 30px;
+  color: #a59f95;
+}
+
+.panel-content ul {
+  position: relative;
+}
+
+.panel-content li::before {
+  content: "▷";
+  position: absolute;
+  left: 0;
+  color: #63f2d0;
+  font-size: 5px;
+  padding-top: 3px;
+}
+
+@media screen and (max-width: 990px) {
+  .experience-container {
+    padding-left: 100px;
+    padding-bottom: 60px;
+  }
+
+  .react-tabs {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .experience-container {
+    padding-left: 25px;
+  }
+
+  .react-tabs {
+    width: 270px;
+    height: 270px;
+    flex-direction: column;
+  }
+
+  .react-tabs__tab p {
+    font-size: 10px;
+  }
+
+  .react-tabs__tab-list {
+    flex-direction: row;
+    width: 305px;
+    margin-bottom: 2rem;
+  }
+
+  .react-tabs__tab--selected {
+    border-left: none;
+    border-bottom: 2px solid #63f2d0;
+  }
+}
